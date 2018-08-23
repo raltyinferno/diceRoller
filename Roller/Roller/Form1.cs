@@ -16,5 +16,10 @@ namespace Roller
         {
             InitializeComponent();
         }
+
+        private void rollStatsButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,6 +43,9 @@ namespace Roller
             this.dice_amount_textbox.Name = "dice_amount_textbox";
             this.dice_amount_textbox.Size = new System.Drawing.Size(47, 20);
             this.dice_amount_textbox.TabIndex = 1;
+            this.dice_amount_textbox.Text = "1";
+            this.dice_amount_textbox.Click += new System.EventHandler(this.amount_select_on_focus);
+            this.dice_amount_textbox.Enter += new System.EventHandler(this.amount_select_on_focus);
             // 
             // dice_sides_label
             // 
@@ -59,6 +62,8 @@ namespace Roller
             this.modifier_textbox.Name = "modifier_textbox";
             this.modifier_textbox.Size = new System.Drawing.Size(49, 20);
             this.modifier_textbox.TabIndex = 3;
+            this.modifier_textbox.Text = "0";
+            this.modifier_textbox.Click += new System.EventHandler(this.mod_select_on_focus);
             // 
             // roller_click
             // 
@@ -72,13 +77,13 @@ namespace Roller
             // 
             // total_label
             // 
+            this.total_label.BackColor = this.BackColor;
             this.total_label.Location = new System.Drawing.Point(219, 4);
             this.total_label.Name = "total_label";
-            this.total_label.Size = new System.Drawing.Size(49,20);
+            this.total_label.ReadOnly = true;
+            this.total_label.Size = new System.Drawing.Size(49, 20);
             this.total_label.TabIndex = 5;
             this.total_label.Text = "0";
-            this.total_label.ReadOnly = true;
-            this.total_label.BackColor = this.BackColor;
             // 
             // modified_dice_roller_control
             // 

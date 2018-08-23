@@ -85,5 +85,15 @@ namespace Roller
             rollsDisplay.AppendText(display_string + "\r\n" + rolls_string + "\r\n\r\n");
 
         }
+
+        private void amount_select_on_focus(object sender, EventArgs e)
+        {
+            this.dice_amount_textbox.SelectAll();
+        }
+
+        private void mod_select_on_focus(object sender, EventArgs e)
+        {
+            this.modifier_textbox.SelectAll();
+        }
     }
 }
