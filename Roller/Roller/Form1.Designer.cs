@@ -41,9 +41,9 @@
             this.d6_mod_roller = new Roller.modified_dice_roller_control();
             this.d4_mod_roller = new Roller.modified_dice_roller_control();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioOrderHigh = new System.Windows.Forms.RadioButton();
-            this.radioOrderLow = new System.Windows.Forms.RadioButton();
             this.radioOrderRolled = new System.Windows.Forms.RadioButton();
+            this.radioOrderLow = new System.Windows.Forms.RadioButton();
+            this.radioOrderHigh = new System.Windows.Forms.RadioButton();
             this.reroll1s = new System.Windows.Forms.CheckBox();
             this.stat_min = new System.Windows.Forms.TextBox();
             this.stat_total_min = new System.Windows.Forms.TextBox();
@@ -77,6 +77,7 @@
             // radio4d6
             // 
             this.radio4d6.AutoSize = true;
+            this.radio4d6.Checked = true;
             this.radio4d6.Location = new System.Drawing.Point(7, 10);
             this.radio4d6.Name = "radio4d6";
             this.radio4d6.Size = new System.Drawing.Size(127, 17);
@@ -92,7 +93,6 @@
             this.radio3d6.Name = "radio3d6";
             this.radio3d6.Size = new System.Drawing.Size(64, 17);
             this.radio3d6.TabIndex = 10;
-            this.radio3d6.TabStop = true;
             this.radio3d6.Text = "Roll 3d6";
             this.radio3d6.UseVisualStyleBackColor = true;
             // 
@@ -180,16 +180,15 @@
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             // 
-            // radioOrderHigh
+            // radioOrderRolled
             // 
-            this.radioOrderHigh.AutoSize = true;
-            this.radioOrderHigh.Location = new System.Drawing.Point(7, 9);
-            this.radioOrderHigh.Name = "radioOrderHigh";
-            this.radioOrderHigh.Size = new System.Drawing.Size(102, 17);
-            this.radioOrderHigh.TabIndex = 0;
-            this.radioOrderHigh.TabStop = true;
-            this.radioOrderHigh.Text = "Order by highest";
-            this.radioOrderHigh.UseVisualStyleBackColor = true;
+            this.radioOrderRolled.AutoSize = true;
+            this.radioOrderRolled.Location = new System.Drawing.Point(7, 57);
+            this.radioOrderRolled.Name = "radioOrderRolled";
+            this.radioOrderRolled.Size = new System.Drawing.Size(93, 17);
+            this.radioOrderRolled.TabIndex = 2;
+            this.radioOrderRolled.Text = "Order as rolled";
+            this.radioOrderRolled.UseVisualStyleBackColor = true;
             // 
             // radioOrderLow
             // 
@@ -198,20 +197,20 @@
             this.radioOrderLow.Name = "radioOrderLow";
             this.radioOrderLow.Size = new System.Drawing.Size(98, 17);
             this.radioOrderLow.TabIndex = 1;
-            this.radioOrderLow.TabStop = true;
             this.radioOrderLow.Text = "Order by lowest";
             this.radioOrderLow.UseVisualStyleBackColor = true;
             // 
-            // radioOrderRolled
+            // radioOrderHigh
             // 
-            this.radioOrderRolled.AutoSize = true;
-            this.radioOrderRolled.Location = new System.Drawing.Point(7, 57);
-            this.radioOrderRolled.Name = "radioOrderRolled";
-            this.radioOrderRolled.Size = new System.Drawing.Size(93, 17);
-            this.radioOrderRolled.TabIndex = 2;
-            this.radioOrderRolled.TabStop = true;
-            this.radioOrderRolled.Text = "Order as rolled";
-            this.radioOrderRolled.UseVisualStyleBackColor = true;
+            this.radioOrderHigh.AutoSize = true;
+            this.radioOrderHigh.Checked = true;
+            this.radioOrderHigh.Location = new System.Drawing.Point(7, 9);
+            this.radioOrderHigh.Name = "radioOrderHigh";
+            this.radioOrderHigh.Size = new System.Drawing.Size(102, 17);
+            this.radioOrderHigh.TabIndex = 0;
+            this.radioOrderHigh.TabStop = true;
+            this.radioOrderHigh.Text = "Order by highest";
+            this.radioOrderHigh.UseVisualStyleBackColor = true;
             // 
             // reroll1s
             // 
