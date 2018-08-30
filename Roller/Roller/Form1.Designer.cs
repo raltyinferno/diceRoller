@@ -33,13 +33,6 @@
             this.radio4d6 = new System.Windows.Forms.RadioButton();
             this.radio3d6 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.d100_mod_roller = new Roller.modified_dice_roller_control();
-            this.d20_mod_roller = new Roller.modified_dice_roller_control();
-            this.d12_mod_roller = new Roller.modified_dice_roller_control();
-            this.d10_mod_roller = new Roller.modified_dice_roller_control();
-            this.d8_mod_roller = new Roller.modified_dice_roller_control();
-            this.d6_mod_roller = new Roller.modified_dice_roller_control();
-            this.d4_mod_roller = new Roller.modified_dice_roller_control();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioOrderRolled = new System.Windows.Forms.RadioButton();
             this.radioOrderLow = new System.Windows.Forms.RadioButton();
@@ -52,6 +45,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.rollStatsButton = new System.Windows.Forms.Button();
+            this.d100_mod_roller = new Roller.modified_dice_roller_control();
+            this.d20_mod_roller = new Roller.modified_dice_roller_control();
+            this.d12_mod_roller = new Roller.modified_dice_roller_control();
+            this.d10_mod_roller = new Roller.modified_dice_roller_control();
+            this.d8_mod_roller = new Roller.modified_dice_roller_control();
+            this.d6_mod_roller = new Roller.modified_dice_roller_control();
+            this.d4_mod_roller = new Roller.modified_dice_roller_control();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -105,69 +105,6 @@
             this.groupBox1.Size = new System.Drawing.Size(200, 58);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            // 
-            // d100_mod_roller
-            // 
-            this.d100_mod_roller.Die = 100;
-            this.d100_mod_roller.ExternalDisplay = this.MainDisplay;
-            this.d100_mod_roller.Location = new System.Drawing.Point(13, 211);
-            this.d100_mod_roller.Name = "d100_mod_roller";
-            this.d100_mod_roller.Size = new System.Drawing.Size(273, 27);
-            this.d100_mod_roller.TabIndex = 7;
-            // 
-            // d20_mod_roller
-            // 
-            this.d20_mod_roller.Die = 20;
-            this.d20_mod_roller.ExternalDisplay = this.MainDisplay;
-            this.d20_mod_roller.Location = new System.Drawing.Point(13, 178);
-            this.d20_mod_roller.Name = "d20_mod_roller";
-            this.d20_mod_roller.Size = new System.Drawing.Size(273, 27);
-            this.d20_mod_roller.TabIndex = 5;
-            // 
-            // d12_mod_roller
-            // 
-            this.d12_mod_roller.Die = 12;
-            this.d12_mod_roller.ExternalDisplay = this.MainDisplay;
-            this.d12_mod_roller.Location = new System.Drawing.Point(13, 144);
-            this.d12_mod_roller.Name = "d12_mod_roller";
-            this.d12_mod_roller.Size = new System.Drawing.Size(273, 27);
-            this.d12_mod_roller.TabIndex = 4;
-            // 
-            // d10_mod_roller
-            // 
-            this.d10_mod_roller.Die = 10;
-            this.d10_mod_roller.ExternalDisplay = this.MainDisplay;
-            this.d10_mod_roller.Location = new System.Drawing.Point(13, 111);
-            this.d10_mod_roller.Name = "d10_mod_roller";
-            this.d10_mod_roller.Size = new System.Drawing.Size(273, 27);
-            this.d10_mod_roller.TabIndex = 3;
-            // 
-            // d8_mod_roller
-            // 
-            this.d8_mod_roller.Die = 8;
-            this.d8_mod_roller.ExternalDisplay = this.MainDisplay;
-            this.d8_mod_roller.Location = new System.Drawing.Point(13, 78);
-            this.d8_mod_roller.Name = "d8_mod_roller";
-            this.d8_mod_roller.Size = new System.Drawing.Size(273, 27);
-            this.d8_mod_roller.TabIndex = 2;
-            // 
-            // d6_mod_roller
-            // 
-            this.d6_mod_roller.Die = 6;
-            this.d6_mod_roller.ExternalDisplay = this.MainDisplay;
-            this.d6_mod_roller.Location = new System.Drawing.Point(13, 45);
-            this.d6_mod_roller.Name = "d6_mod_roller";
-            this.d6_mod_roller.Size = new System.Drawing.Size(273, 27);
-            this.d6_mod_roller.TabIndex = 1;
-            // 
-            // d4_mod_roller
-            // 
-            this.d4_mod_roller.Die = 4;
-            this.d4_mod_roller.ExternalDisplay = this.MainDisplay;
-            this.d4_mod_roller.Location = new System.Drawing.Point(13, 12);
-            this.d4_mod_roller.Name = "d4_mod_roller";
-            this.d4_mod_roller.Size = new System.Drawing.Size(273, 27);
-            this.d4_mod_roller.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -250,7 +187,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 13);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Individual Stat Min (max 18)";
+            this.label2.Text = "Individual Stat Min (max 17)";
             // 
             // label3
             // 
@@ -259,7 +196,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 13);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Total Stat Min (max 108)";
+            this.label3.Text = "Total Stat Min (max 102)";
             // 
             // label4
             // 
@@ -279,6 +216,69 @@
             this.rollStatsButton.Text = "Roll";
             this.rollStatsButton.UseVisualStyleBackColor = true;
             this.rollStatsButton.Click += new System.EventHandler(this.rollStatsButton_Click);
+            // 
+            // d100_mod_roller
+            // 
+            this.d100_mod_roller.Die = 100;
+            this.d100_mod_roller.ExternalDisplay = this.MainDisplay;
+            this.d100_mod_roller.Location = new System.Drawing.Point(13, 211);
+            this.d100_mod_roller.Name = "d100_mod_roller";
+            this.d100_mod_roller.Size = new System.Drawing.Size(273, 27);
+            this.d100_mod_roller.TabIndex = 7;
+            // 
+            // d20_mod_roller
+            // 
+            this.d20_mod_roller.Die = 20;
+            this.d20_mod_roller.ExternalDisplay = this.MainDisplay;
+            this.d20_mod_roller.Location = new System.Drawing.Point(13, 178);
+            this.d20_mod_roller.Name = "d20_mod_roller";
+            this.d20_mod_roller.Size = new System.Drawing.Size(273, 27);
+            this.d20_mod_roller.TabIndex = 5;
+            // 
+            // d12_mod_roller
+            // 
+            this.d12_mod_roller.Die = 12;
+            this.d12_mod_roller.ExternalDisplay = this.MainDisplay;
+            this.d12_mod_roller.Location = new System.Drawing.Point(13, 144);
+            this.d12_mod_roller.Name = "d12_mod_roller";
+            this.d12_mod_roller.Size = new System.Drawing.Size(273, 27);
+            this.d12_mod_roller.TabIndex = 4;
+            // 
+            // d10_mod_roller
+            // 
+            this.d10_mod_roller.Die = 10;
+            this.d10_mod_roller.ExternalDisplay = this.MainDisplay;
+            this.d10_mod_roller.Location = new System.Drawing.Point(13, 111);
+            this.d10_mod_roller.Name = "d10_mod_roller";
+            this.d10_mod_roller.Size = new System.Drawing.Size(273, 27);
+            this.d10_mod_roller.TabIndex = 3;
+            // 
+            // d8_mod_roller
+            // 
+            this.d8_mod_roller.Die = 8;
+            this.d8_mod_roller.ExternalDisplay = this.MainDisplay;
+            this.d8_mod_roller.Location = new System.Drawing.Point(13, 78);
+            this.d8_mod_roller.Name = "d8_mod_roller";
+            this.d8_mod_roller.Size = new System.Drawing.Size(273, 27);
+            this.d8_mod_roller.TabIndex = 2;
+            // 
+            // d6_mod_roller
+            // 
+            this.d6_mod_roller.Die = 6;
+            this.d6_mod_roller.ExternalDisplay = this.MainDisplay;
+            this.d6_mod_roller.Location = new System.Drawing.Point(13, 45);
+            this.d6_mod_roller.Name = "d6_mod_roller";
+            this.d6_mod_roller.Size = new System.Drawing.Size(273, 27);
+            this.d6_mod_roller.TabIndex = 1;
+            // 
+            // d4_mod_roller
+            // 
+            this.d4_mod_roller.Die = 4;
+            this.d4_mod_roller.ExternalDisplay = this.MainDisplay;
+            this.d4_mod_roller.Location = new System.Drawing.Point(13, 12);
+            this.d4_mod_roller.Name = "d4_mod_roller";
+            this.d4_mod_roller.Size = new System.Drawing.Size(273, 27);
+            this.d4_mod_roller.TabIndex = 0;
             // 
             // Form1
             // 
